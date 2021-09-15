@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    
+    <title>emp signup</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        form{
+            padding:100px;
+            width: 1000px;
+            position: relative;
+        }
+        h4{
+            padding:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--CREATING THE INFO-->
+
+    
+                     
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label for="signupFirstname">First Name</label>
+                                <input type="text" class="form-control" id="signupFirstname" placeholder="First Name" name="first_name" required>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="signupLastname">Last Name</label>
+                                <input type="text" class="form-control" id="signupLastname" placeholder="Last Name" name="last_name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupEmail">Email address:</label>
+                            <input type="email" class="form-control" placeholder="Enter email" id="signupEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signupPwd">Password:</label>
+                            <input type="password" class="form-control" placeholder="Enter password" id="signupPwd" name="password" required minlength="8">
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <button type="button" class="btn btn-primary col-sm-12" id="register-button">register</button>
+                            </div>
+                            
+
+                            <h4>Click the register button to save the token in the local storage</h4>
+                          
+                        </div>
+    <script src="/main.js"></script>
+</body>
+
+
+</html>
